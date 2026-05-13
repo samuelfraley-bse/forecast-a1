@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import pandas as pd; df = pd.read_csv\\('data/final_panel_data.csv', nrows=2\\); print\\(df.shape\\); print\\(df.columns.tolist\\(\\)\\)\")",
+      "Bash(python -c \"import json; nb=json.load\\(open\\('class/session_3.ipynb'\\)\\); print\\(f'{len\\(nb[\\\\\"cells\\\\\"]\\)} cells'\\); [print\\(f'=== Cell {i} ===\\\\n', ''.join\\(c['source']\\)[:800], '\\\\n'\\) for i,c in enumerate\\(nb['cells']\\)]\")",
+      "Bash(python -c \"import json; nb=json.load\\(open\\('class/session_3.ipynb'\\)\\); [print\\(f'=== Cell {i} ===\\\\n', ''.join\\(c['source']\\), '\\\\n'\\) for i,c in enumerate\\(nb['cells']\\) if c['cell_type']=='code']\")",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
